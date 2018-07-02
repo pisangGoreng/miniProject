@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
   itemContainer: {
     width: '100%',
     height: 90,
-    // backgroundColor: 'blue',
     marginVertical: 10,
     borderWidth: 1,
     borderRadius: 3,

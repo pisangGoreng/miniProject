@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import {View, Text, TouchableOpacity} from 'react-native'
-import {connect} from 'react-redux'
 
 import Styles from './Styles/HomeStyle'
 import FontStyles from '../Themes//Font'
 
 
-class Home extends Component {
+export default class Home extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -44,18 +43,3 @@ class Home extends Component {
     )
   }
 }
-
-const mapStateToProps = (state) => {
-  return {
-    UserReducer: state.UserReducer
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    // fetchingSomeNewsThunk: (offsetFetcing, idNews, userCredential) => dispatch(fetchingSomeNewsThunk(offsetFetcing, idNews, userCredential))
-  }
-}
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
